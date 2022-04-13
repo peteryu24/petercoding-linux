@@ -1,15 +1,10 @@
 #include <pthread.h>
-
 #include <semaphore.h>
-
 #include <stdlib.h>
-
 #include <stdio.h>
-
 #include <unistd.h> // usleep() 오류를 위한 코드
 
 #define MaxItems 5 // Maximum items a producer can produce or a consumer can consume
-
 #define BufferSize 5 // Size of the buffer
 
 sem_t empty;
