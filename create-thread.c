@@ -1,24 +1,15 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <pthread.h> // 쓰레드 생성을 위한 헤더
 
-
-
 void *print_message_function( void *ptr );
-
-
 
 int main()
 
 {
     pthread_t thread1, thread2;
-
      char *message1 = "Thread 1";
-
      char *message2 = "Thread 2";
-
      int  iret1, iret2;
 
     // 쓰레드 생성
@@ -45,7 +36,6 @@ int main()
      exit(0);
 
 }
-
 
 
 void *print_message_function( void *ptr )  // 출력 메소드
